@@ -104,7 +104,7 @@ def display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster):
     st.divider()
 
 # ==========================================
-# FUNCTION 1 : MAIN MENU
+# FUNCTION 1 : MAIN MENU #check
 # ==========================================
 def show_menu():
     st.sidebar.header("MAIN MENU")
@@ -141,7 +141,7 @@ def choose_genre():
         return genre
 
 # ==========================================
-# FUNCTION 3 : GET MINIMUM RATING
+# FUNCTION 3 : GET MINIMUM RATING #check
 # ==========================================
 def get_min_rating():
     st.write("\nRating should be between 0 and 10")
@@ -153,34 +153,99 @@ def get_min_rating():
     return rating
 
 # ==========================================
-# FUNCTION 4 : GET MAXIMUM DURATION
+# FUNCTION 4 : GET MAXIMUM DURATION #check
 # ==========================================
 def get_max_duration():
     duration = st.number_input("Maximum duration (minutes):", min_value=1, value=150)
     if duration < 1:
         duration = 1
     return duration
-# ฟังก์ชัน 5: แสดงภาพยนตร์คะแนนสูงสุด
-def show_highest_rated(movie_list):
-    highest = find_highest_rating(movie_list)
-    st.info(f"Top Rating in System: ⭐ {highest}")
-    
-    for m in movie_list:
-        rating = m["rating"]
-        if rating == highest:
-            display_movie_card(m)
 
-# ฟังก์ชัน 6: แสดงภาพยนตร์ตามประเภท
-def show_movies_by_genre(movie_list, genre):
+# ==========================================
+# FUNCTION 5 : FIND MOVIES #check
+# ==========================================
+def find_movies(movie_list, genre, min_rating, max_duration):
     found = 0
     for m in movie_list:
+        name = m["title"]
         genre_movie = m["genre"]
+        rating = m["rating"]
+        duration = m["duration"]
+        synopsis = m["synopsis"]
+        poster = m["poster"]
+
         if genre_movie == genre:
-            display_movie_card(m)
-            found = found + 1
-            
+            if rating >= min_rating:
+                if duration <= max_duration:
+                    display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
+                    found = found + 1
+    return found
+
+# ==========================================
+# FUNCTION 6 : DISPLAY RESULT#check
+# ==========================================
+def display_result(found):
     if found == 0:
-        st.warning("No movies found in this genre.")
+        st.warning("\nNo movies found.")
+        st.warning("Please try different conditions.")
+    else:
+        print("\n==========================================")
+        print("             MOVIE RESULTS")
+        print("==========================================")
+        st.success(f"Found {found} movie(s).")
+
+# ==========================================
+# FUNCTION 7 : SHOW ALL MOVIES#check
+# ==========================================
+def show_all_movies(movie_list):
+    st.subheader("ALL MOVIES")
+    number = 1
+
+    for m in movie_list:
+        name = m["title"]
+        genre_movie = m["genre"]
+        rating = m["rating"]
+        duration = m["duration"]
+        synopsis = m["synopsis"]
+        poster = m["poster"]
+
+        st.write(f"### {number}.")
+        display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
+        number = number + 1
+
+# ==========================================
+# FUNCTION 8 : FIND HIGHEST RATING#check
+# ==========================================
+def find_highest_rating(movie_list):
+    highest = movie_list[0]["rating"]
+    for m in movie_list:
+        rating = m["rating"]
+        if rating > highest:
+            highest = rating
+    return highest
+
+# ==========================================
+# FUNCTION 9 : SHOW HIGHEST-RATED MOVIES
+# ==========================================
+def show_highest_rated(movie_list):
+    highest = find_highest_rating(movie_list)
+    st.subheader(f"HIGHEST-RATED MOVIES (⭐ {highest})")
+
+    print("\n==========================================")
+    print("         HIGHEST-RATED MOVIES")
+    print("==========================================")
+
+for m in movie_list:
+        name = m["title"]
+        genre_movie = m["genre"]
+        rating = m["rating"]
+        duration = m["duration"]
+        synopsis = m["synopsis"]
+        poster = m["poster"]
+
+        if rating == highest:
+            display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
+            print("------------------------------------------")
 
 
 # ==========================================
