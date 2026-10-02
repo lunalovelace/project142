@@ -928,7 +928,6 @@ def display_result(found):
 def show_all_movies(movie_list):
     st.subheader("ALL MOVIES")
     number = 1
-
 for m in movie_list:
         name = m["title"]
         genre_movie = m["genre"]
