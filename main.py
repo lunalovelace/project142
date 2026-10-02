@@ -81,7 +81,7 @@ movie = [
         "genre": "Horror",
         "rating": 7.6,
         "duration": 94,
-        "synopsis": ""ไวรัสซอมบี้มรณะระบาดทั่วแล็บใต้ดิน ทางรอดเดียวคือต้องฝ่าดงอสูรกายออกไปให้ได้"",
+        "synopsis": "ไวรัสซอมบี้มรณะระบาดทั่วแล็บใต้ดิน ทางรอดเดียวคือต้องฝ่าดงอสูรกายออกไปให้ได้",
         "poster": "https://www.themoviedb.org/t/p/w1280/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg"
     },
     {
