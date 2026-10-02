@@ -786,7 +786,7 @@ def choose_genre():
 # ==========================================
 def get_min_rating():
     st.write("\nRating should be between 0 and 10")
-    rating = st.slider("Enter minimum rating :,0.0, 10.0, 7.0, 0.1)
+    rating = st.slider("Enter minimum rating :",0.0, 10.0, 7.0, 0.1)
     if rating < 0:
         rating = 0
     elif rating > 10:
