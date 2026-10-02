@@ -1,0 +1,216 @@
+import streamlit as st
+
+# ตั้งค่าหน้าเว็บไซต์
+st.set_page_config(page_title="Movie Recommendation System", layout="wide")
+
+# ==========================================
+# DATASET : MOVIE LIST (Dictionary)
+# ==========================================
+movie = [
+    {
+        "title": "The Conjuring",
+        "genre": "Horror",
+        "rating": 7.5,
+        "duration": 112,
+        "synopsis": "เรื่องราวของสองสามีภรรยาผู้เชี่ยวชาญเรื่องสืบสวนสิ่งเหนือธรรมชาติ ที่ต้องเข้าไปช่วยเหลือครอบครัวหนึ่งในบ้านฟาร์มที่ถูกวิญญาณร้ายตามหลอกหลอน",
+        "poster": "https://image.tmdb.org/t4/p/w500/w929O135C6R19d8544.jpg"
+    },
+    {
+        "title": "Resident Evil",
+        "genre": "Horror",
+        "rating": 7.6,
+        "duration": 94,
+        "synopsis": "หน่วยคอมมานโดเข้าระงับเหตุในศูนย์วิจัยใต้ดิน The Hive ที่ซึ่งไวรัสร้ายเปลี่ยนเจ้าหน้าที่ให้กลายเป็นซอมบี้",
+        "poster": "https://image.tmdb.org/t4/p/w500/r0A2928.jpg"
+    },
+    {
+        "title": "IT",
+        "genre": "Horror",
+        "rating": 7.3,
+        "duration": 135,
+        "synopsis": "เด็กๆ ในเมืองเดอร์รี่ต้องเผชิญหน้ากับความกลัวสูงสุดเมื่อต้องรับมือกับตัวตลกปีศาจ เพนนีไวส์ ที่ออกล่าเด็กทุกๆ 27 ปี",
+        "poster": "https://image.tmdb.org/t4/p/w500/9E2yT835J1835.jpg"
+    },
+    {
+        "title": "Avengers:Endgame",
+        "genre": "Action",
+        "rating": 8.4,
+        "duration": 181,
+        "synopsis": "เหล่าอเวนเจอร์สที่เหลือรอดต้องรวบรวมความหวังสุดท้ายเพื่อย้อนเวลากลับไปกู้วิกฤตจักรวาลจากธานอส",
+        "poster": "https://image.tmdb.org/t4/p/w500/or8626A1835.jpg"
+    },
+    {
+        "title": "John Wick",
+        "genre": "Action",
+        "rating": 7.5,
+        "duration": 101,
+        "synopsis": "อดีตนักฆ่าฝีมือโหดหินต้องกลับมาวาดลวดลายล้างแค้นอีกครั้ง หลังแก๊งมาเฟียทำลายสิ่งที่สำคัญที่สุดในชีวิตเขา",
+        "poster": "https://image.tmdb.org/t4/p/w500/fZ19328227.jpg"
+    },
+    {
+        "title": "Toy Story",
+        "genre": "Animation",
+        "rating": 8.3,
+        "duration": 81,
+        "synopsis": "เรื่องราวความผูกพันและการเดินทางสุดป่วนของเหล่าของเล่นที่มีชีวิตเมื่อมนุษย์ไม่อยู่",
+        "poster": "https://image.tmdb.org/t4/p/w500/uXD135.jpg"
+    },
+    {
+        "title": "Frozen",
+        "genre": "Animation",
+        "rating": 7.4,
+        "duration": 102,
+        "synopsis": "เจ้าหญิงอันนาออกเดินทางร่วมกับคริสตอฟฟ์และสเวน เพื่อตามหาเอลซ่าพี่สาวของเธอที่มีพลังน้ำแข็งจนทำให้เมืองตกอยู่ในฤดูหนาวนิรันดร์",
+        "poster": "https://image.tmdb.org/t4/p/w500/kgL135.jpg"
+    },
+    {
+        "title": "La La Land",
+        "genre": "Romance",
+        "rating": 8.0,
+        "duration": 128,
+        "synopsis": "เรื่องรักหวานขมของนักเปียโนแจ๊สและนักแสดงสาวฝึกหัดผู้ไล่ตามความฝันในลอสแอนเจลิส",
+        "poster": "https://image.tmdb.org/t4/p/w500/uDO135.jpg"
+    },
+    {
+        "title": "The Wolf of Wall Street",
+        "genre": "Comedy",
+        "rating": 8.2,
+        "duration": 180,
+        "synopsis": "เรื่องราวชีวิตจริงสุดเหวี่ยง โลภ โกง และบ้าคลั่งของโบรกเกอร์หุ้นระดับตำนานแห่งวอลล์สตรีท",
+        "poster": "https://image.tmdb.org/t4/p/w500/pE135.jpg"
+    },
+    {
+        "title": "Avatar",
+        "genre": "Fantasy",
+        "rating": 7.9,
+        "duration": 162,
+        "synopsis": "อดีตนาวิกโยธินผู้เป็นอัมพาตถูกส่งไปยังดาวแพนดอรา และต้องเลือกระหว่างภารกิจกับความรักในเผ่าพันธุ์ท้องถิ่น",
+        "poster": "https://image.tmdb.org/t4/p/w500/jR135.jpg"
+    }
+]
+
+
+# ==========================================
+# USER-DEFINED FUNCTIONS
+# ==========================================
+
+# ฟังก์ชัน 1: แสดงผลการ์ดภาพยนตร์บน Streamlit
+def display_movie_card(m):
+    col_img, col_detail = st.columns([1, 3])
+    with col_img:
+        st.image(m["poster"], use_column_width=True)
+    with col_detail:
+        st.subheader(m["title"])
+        st.write(f"**Genre:** {m['genre']} | **Rating:** ⭐ {m['rating']} | **Duration:** ⏱️ {m['duration']} minutes")
+        st.write(f"**Synopsis:** {m['synopsis']}")
+    st.divider()
+
+# ฟังก์ชัน 2: ค้นหาภาพยนตร์ตามเงื่อนไข
+def find_movies(movie_list, genre, min_rating, max_duration):
+    found = 0
+    for m in movie_list:
+        name = m["title"]
+        genre_movie = m["genre"]
+        rating = m["rating"]
+        duration = m["duration"]
+
+        if genre_movie == genre or genre == "All":
+            if rating >= min_rating:
+                if duration <= max_duration:
+                    display_movie_card(m)
+                    found = found + 1
+    return found
+
+# ฟังก์ชัน 3: แสดงภาพยนตร์ทั้งหมด
+def show_all_movies(movie_list):
+    number = 1
+    for m in movie_list:
+        st.write(f"### {number}.")
+        display_movie_card(m)
+        number = number + 1
+
+# ฟังก์ชัน 4: ค้นหาคะแนนสูงสุด
+def find_highest_rating(movie_list):
+    highest = movie_list[0]["rating"]
+    for m in movie_list:
+        rating = m["rating"]
+        if rating > highest:
+            highest = rating
+    return highest
+
+# ฟังก์ชัน 5: แสดงภาพยนตร์คะแนนสูงสุด
+def show_highest_rated(movie_list):
+    highest = find_highest_rating(movie_list)
+    st.info(f"Top Rating in System: ⭐ {highest}")
+    
+    for m in movie_list:
+        rating = m["rating"]
+        if rating == highest:
+            display_movie_card(m)
+
+# ฟังก์ชัน 6: แสดงภาพยนตร์ตามประเภท
+def show_movies_by_genre(movie_list, genre):
+    found = 0
+    for m in movie_list:
+        genre_movie = m["genre"]
+        if genre_movie == genre:
+            display_movie_card(m)
+            found = found + 1
+            
+    if found == 0:
+        st.warning("No movies found in this genre.")
+
+
+# ==========================================
+# WEB UI (STREAMLIT) - มาแทน while running
+# ==========================================
+
+st.title("🎬 MOVIE RECOMMENDATION SYSTEM")
+st.write("This program helps users find movies based on genre, rating and duration.")
+
+# เมนูแถบข้าง (Sidebar)
+st.sidebar.header("📌 MAIN MENU")
+choice = st.sidebar.radio(
+    "Choose an option:",
+    [
+        "1. Find a Movie",
+        "2. Show All Movies",
+        "3. Show Highest-Rated Movies",
+        "4. Show Movies by Genre"
+    ]
+)
+
+# การทำงานแต่ละเมนู
+if choice == "1. Find a Movie":
+    st.header("🔍 Find a Movie")
+    
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        genre = st.selectbox("Choose Genre:", ["Horror", "Action", "Animation", "Romance", "Comedy", "Fantasy"])
+    with col2:
+        min_rating = st.slider("Minimum Rating (0-10):", 0.0, 10.0, 7.0, 0.1)
+    with col3:
+        max_duration = st.number_input("Maximum Duration (minutes):", min_value=1, value=180)
+        
+    if st.button("Search Movies"):
+        st.subheader("MOVIE RESULTS")
+        found = find_movies(movie, genre, min_rating, max_duration)
+        if found == 0:
+            st.warning("No movies found. Please try different conditions.")
+        else:
+            st.success(f"Found {found} movie(s).")
+
+elif choice == "2. Show All Movies":
+    st.header("📜 ALL MOVIES")
+    show_all_movies(movie)
+
+elif choice == "3. Show Highest-Rated Movies":
+    st.header("🏆 HIGHEST-RATED MOVIES")
+    show_highest_rated(movie)
+
+elif choice == "4. Show Movies by Genre":
+    st.header("🎭 SHOW MOVIES BY GENRE")
+    selected_genre = st.selectbox("Select Genre to Display:", ["Horror", "Action", "Animation", "Romance", "Comedy", "Fantasy"])
+    
+    if st.button("Show Movies"):
+        show_movies_by_genre(movie, selected_genre)
