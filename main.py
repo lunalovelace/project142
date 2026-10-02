@@ -941,15 +941,6 @@ def find_movie_menu(movie_list):
             )
             display_result(found)
 
-            if found == 0:
-
-                 st.warning("No movies found.")
-                 st.write("Please try different conditions.")
-
-            else:
-
-                st.write("Found", found, "movie(s).")
-
 # ==========================================
 # FUNCTION 12 : SHOW INFORMATION
 # ==========================================
