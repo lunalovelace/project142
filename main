@@ -108,44 +108,55 @@ def display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster):
 # ==========================================
 def show_menu():
     st.sidebar.header("MAIN MENU")
-    print("\n==========================================")
-    print("       MOVIE RECOMMENDATION SYSTEM")
-    print("==========================================")
-    print("1. Find a Movie")
-    print("2. Show All Movies")
-    print("3. Show Highest-Rated Movies")
-    print("4. Show Movies by Genre")
-    print("5. Exit")
-    print("==========================================")
+    
+    # รวมข้อความทั้งหมดให้อยู่ในรูปแบบเดียวกัน
+    menu_text = (
+        "==========================================\n"
+        "       MOVIE RECOMMENDATION SYSTEM\n"
+        "==========================================\n"
+        "1. Find a Movie\n"
+        "2. Show All Movies\n"
+        "3. Show Highest-Rated Movies\n"
+        "4. Show Movies by Genre\n"
+        "5. Exit\n"
+        "=========================================="
+    )
+    
 
+    st.code(menu_text, language=None)
+
+# ==========================================
+# FUNCTION 2 : CHOOSE GENRE
+# ==========================================
 def choose_genre():
     choice = st.selectbox(
         "Choose genre:",
         ["1. Horror", "2. Action", "3. Animation", "4. Romance", "5. Comedy", "6. Fantasy", "7. Thriller"]
-        if "1" in choice:
-            genre = "Horror"
-        elif "2" in choice:
-            genre = "Action"
-        elif "3" in choice:
-            genre = "Animation"
-        elif "4" in choice:
-            genre = "Romance"
-        elif "5" in choice:
-            genre = "Comedy"
-        elif "6" in choice:
-            genre = "Fantasy"
-        elif "7" in choice:
-            genre = "Thriller"
-        else:
-            genre = "Wrong"
-        return genre
+)
+    if "1" in choice:
+        genre = "Horror"
+    elif "2" in choice:
+        genre = "Action"
+    elif "3" in choice:
+        genre = "Animation"
+    elif "4" in choice:
+        genre = "Romance"
+    elif "5" in choice:
+        genre = "Comedy"
+    elif "6" in choice:
+        genre = "Fantasy"
+    elif "7" in choice:
+        genre = "Thriller"
+    else:
+        genre = "Wrong"
+    return genre
 
 # ==========================================
 # FUNCTION 3 : GET MINIMUM RATING #check
 # ==========================================
 def get_min_rating():
     st.write("\nRating should be between 0 and 10")
-    rating = st.slider("Enter minimum rating :)
+    rating = st.slider("Enter minimum rating :,0.0, 10.0, 7.0, 0.1)
     if rating < 0:
         rating = 0
     elif rating > 10:
@@ -225,15 +236,11 @@ def find_highest_rating(movie_list):
     return highest
 
 # ==========================================
-# FUNCTION 9 : SHOW HIGHEST-RATED MOVIES#check ไม่แน่ในตรงprint
+# FUNCTION 9 : SHOW HIGHEST-RATED MOVIES#check 
 # ==========================================
 def show_highest_rated(movie_list):
     highest = find_highest_rating(movie_list)
     st.subheader(f"HIGHEST-RATED MOVIES (⭐ {highest})")
-
-    print("\n==========================================")
-    print("         HIGHEST-RATED MOVIES")
-    print("==========================================")
 
 for m in movie_list:
         name = m["title"]
@@ -245,7 +252,7 @@ for m in movie_list:
 
         if rating == highest:
             display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
-            print("------------------------------------------")
+            
 # ==========================================
 # FUNCTION 10 : SHOW MOVIES BY GENRE
 # ==========================================
@@ -304,14 +311,14 @@ def find_movie_menu(movie_list):
             )
             display_result(found)
 
-        if found == 0:
+           if found == 0:
 
-            st.warning("No movies found.")
-            st.write("Please try different conditions.")
+                st.warning("No movies found.")
+                st.write("Please try different conditions.")
 
-        else:
+           else:
 
-            st.write("Found", found, "movie(s).")
+                st.write("Found", found, "movie(s).")
 
 # ==========================================
 # FUNCTION 12 : SHOW INFORMATION
@@ -333,13 +340,11 @@ def show_information():
 # WEB UI (STREAMLIT) - มาแทน while running
 # ==========================================
 
-st.title("🎬 MOVIE RECOMMENDATION SYSTEM")
-st.write("This program helps users find movies based on genre, rating and duration.")
+show_information()
+show_menu()
 
-# เมนูแถบข้าง (Sidebar)
-st.sidebar.header("📌 MAIN MENU")
 choice = st.sidebar.radio(
-    "Choose an option:",
+    "📌 Select Option (1-4):",
     [
         "1. Find a Movie",
         "2. Show All Movies",
@@ -348,37 +353,13 @@ choice = st.sidebar.radio(
     ]
 )
 
-# การทำงานแต่ละเมนู
-if choice == "1. Find a Movie":
-    st.header("🔍 Find a Movie")
-    
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        genre = st.selectbox("Choose Genre:", ["Horror", "Action", "Animation", "Romance", "Comedy", "Fantasy"])
-    with col2:
-        min_rating = st.slider("Minimum Rating (0-10):", 0.0, 10.0, 7.0, 0.1)
-    with col3:
-        max_duration = st.number_input("Maximum Duration (minutes):", min_value=1, value=180)
-        
-    if st.button("Search Movies"):
-        st.subheader("MOVIE RESULTS")
-        found = find_movies(movie, genre, min_rating, max_duration)
-        if found == 0:
-            st.warning("No movies found. Please try different conditions.")
-        else:
-            st.success(f"Found {found} movie(s).")
+st.divider()
 
-elif choice == "2. Show All Movies":
-    st.header("📜 ALL MOVIES")
+if "1" in choice:
+    find_movie_menu(movie)
+elif "2" in choice:
     show_all_movies(movie)
-
-elif choice == "3. Show Highest-Rated Movies":
-    st.header("🏆 HIGHEST-RATED MOVIES")
+elif "3" in choice:
     show_highest_rated(movie)
-
-elif choice == "4. Show Movies by Genre":
-    st.header("🎭 SHOW MOVIES BY GENRE")
-    selected_genre = st.selectbox("Select Genre to Display:", ["Horror", "Action", "Animation", "Romance", "Comedy", "Fantasy"])
-    
-    if st.button("Show Movies"):
-        show_movies_by_genre(movie, selected_genre)
+elif "4" in choice:
+    show_movies_by_genre(movie)
