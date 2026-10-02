@@ -99,7 +99,7 @@ movie = [
        "rating": 6.7,
        "duration": 126,
        "synopsis": "เมื่อมิติปริศนาไร้ทางออกกลายเป็นกับดัก ทุกห้องซ่อนความกลัวและความลับที่พร้อมจะกลืนกินคุณ"
-        "poster":"https://www.themoviedb.org/t/p/w1280/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg"
+       "poster": "https://www.themoviedb.org/t/p/w1280/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg"
   },
   {
     "title": "Util Dawn",
