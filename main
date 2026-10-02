@@ -75,24 +75,24 @@ movie = [
         "rating": 7.5,
         "duration": 112,
         "synopsis": "เรื่องราวของสองสามีภรรยาผู้เชี่ยวชาญเรื่องสืบสวนสิ่งเหนือธรรมชาติ ที่ต้องเข้าไปช่วยเหลือครอบครัวหนึ่งในบ้านฟาร์มที่ถูกวิญญาณร้ายตามหลอกหลอน",
-        "poster": "https://image.tmdb.org/t4/p/w500/w929O135C6R19d8544.jpg"
+        "poster": "https://www.themoviedb.org/t/p/w1280/wVYREutTvI2tmxr6ujrHT704wGF.jpg"
     },
-    {
+    {        
         "title": "Resident Evil",
         "genre": "Horror",
         "rating": 7.6,
         "duration": 94,
-        "synopsis": "หน่วยคอมมานโดเข้าระงับเหตุในศูนย์วิจัยใต้ดิน The Hive ที่ซึ่งไวรัสร้ายเปลี่ยนเจ้าหน้าที่ให้กลายเป็นซอมบี้",
-        "poster": "https://image.tmdb.org/t4/p/w500/r0A2928.jpg"
+        "synopsis": ""ไวรัสซอมบี้มรณะระบาดทั่วแล็บใต้ดิน ทางรอดเดียวคือต้องฝ่าดงอสูรกายออกไปให้ได้"",
+        "poster": "https://www.themoviedb.org/t/p/w1280/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg"
     },
     {
         "title": "IT",
         "genre": "Horror",
         "rating": 7.3,
         "duration": 135,
-        "synopsis": "เด็กๆ ในเมืองเดอร์รี่ต้องเผชิญหน้ากับความกลัวสูงสุดเมื่อต้องรับมือกับตัวตลกปีศาจ เพนนีไวส์ ที่ออกล่าเด็กทุกๆ 27 ปี",
-        "poster": "https://image.tmdb.org/t4/p/w500/9E2yT835J1835.jpg"
-    },
+        "synopsis": ""เมื่อเด็กๆ ในเมืองเริ่มหายตัวไปอย่างไร้ร่องรอย กลุ่มเด็กปีศาจจึงต้องเผชิญหน้ากับความกลัวสูงสุดในรูปร่างของตัวตลกมรณะ"",
+        "poster": "https://www.themoviedb.org/t/p/w1280/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+    }, #ทำถึงตรงนี้
     {
         "title": "Avengers:Endgame",
         "genre": "Action",
@@ -102,7 +102,7 @@ movie = [
         "poster": "https://image.tmdb.org/t4/p/w500/or8626A1835.jpg"
     },
     {
-        "title": "John Wick",
+        "title": "Blackrooms",
         "genre": "Action",
         "rating": 7.5,
         "duration": 101,
