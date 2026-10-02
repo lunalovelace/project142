@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Movie Recommendation System", layout="wide")
 
 # ==========================================
-# DATASET : MOVIE LIST (Dictionary)
+# DATASET : MOVIE LIST
 # ==========================================
 movie = [
     {
@@ -225,7 +225,7 @@ def find_highest_rating(movie_list):
     return highest
 
 # ==========================================
-# FUNCTION 9 : SHOW HIGHEST-RATED MOVIES
+# FUNCTION 9 : SHOW HIGHEST-RATED MOVIES#check ไม่แน่ในตรงprint
 # ==========================================
 def show_highest_rated(movie_list):
     highest = find_highest_rating(movie_list)
@@ -246,6 +246,87 @@ for m in movie_list:
         if rating == highest:
             display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
             print("------------------------------------------")
+# ==========================================
+# FUNCTION 10 : SHOW MOVIES BY GENRE
+# ==========================================
+def show_movies_by_genre(movie_list):
+    genre = choose_genre()
+    if genre == "Wrong":
+        st.error("\nInvalid genre.")
+    else:
+         if st.button("Show Movies"):
+            st.subheader("MOVIE RESULTS")
+            found = 0
+
+            for m in movie_list:
+                name = m["title"]
+                genre_movie = m["genre"]
+                rating = m["rating"]
+                duration = m["duration"]
+                synopsis = m["synopsis"]
+                poster = m["poster"]
+
+                if genre_movie == genre:
+                    display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster)
+                   
+                    found = found + 1
+
+            if found == 0:
+                st.warning("No movies found.")
+
+# ==========================================
+# FUNCTION 11 : FIND MOVIE MENU
+# ==========================================
+
+def find_movie_menu(movie_list):
+
+    st.subheader("FIND A MOVIE")
+
+    genre = choose_genre()
+
+    if genre == "Wrong":
+
+        st.error("Invalid genre.")
+
+    else:
+
+        min_rating = get_min_rating()
+
+        max_duration = get_max_duration()
+
+        if st.button("Search Movies"):
+            st.subheader("MOVIE RESULTS")
+            found = find_movies(
+                movie_list,
+                genre,
+                min_rating,
+                max_duration
+            )
+            display_result(found)
+
+        if found == 0:
+
+            st.warning("No movies found.")
+            st.write("Please try different conditions.")
+
+        else:
+
+            st.write("Found", found, "movie(s).")
+
+# ==========================================
+# FUNCTION 12 : SHOW INFORMATION
+# ==========================================
+
+def show_information():
+    st.title("🎬 MOVIE RECOMMENDATION SYSTEM")
+    st.write("This program helps users find movies based on genre, rating and duration.")
+    
+    with st.expander("ℹ️ Show Program Technical Info"):
+        st.write("The program uses:")
+        st.write("- List")
+        st.write("- If / Elif / Else")
+        st.write("- For Loop")
+        st.write("- User-defined Functions")
 
 
 # ==========================================
