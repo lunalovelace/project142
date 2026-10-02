@@ -1,10 +1,72 @@
 import streamlit as st
 
 # ตั้งค่าหน้าเว็บไซต์
-st.set_page_config(page_title="Movie Recommendation System", layout="wide")
+st.set_page_config(
+    page_title="Movie Recommendation System",
+    page_icon="🎬",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# ตกแต่งด้วย CSS Custom Style
+
+# 2. ตกแต่งด้วย CSS Custom Style
+st.markdown("""
+<style>
+    /* ปรับแต่งส่วนหัวข้อหลัก */
+    .main-title {
+        text-align: center;
+        color: #FF4B4B;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .sub-title {
+        text-align: center;
+        color: #FAFAFA;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+    /* ปรับแต่งกรอบ Code / Terminal Output */
+    div[data-baseweb="code"] {
+        border-radius: 10px;
+        border: 1px solid #333333;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    /* แต่งภาพโปสเตอร์ + เอฟเฟกต์ซูมเวลานำเมาส์ไปชี้ */
+    img {
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+    img:hover {
+        transform: scale(1.04);
+    }
+    /* แต่งปุ่มกดให้มีมิติ */
+    div.stButton > button {
+        border-radius: 8px;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+    div.stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 75, 75, 0.3);
+    }
+    /* แต่งแถบ Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #161920;
+        border-right: 1px solid #2d3139;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
+
+#-------------------------------------------
+
 
 # ==========================================
-# DATASET : MOVIE LIST
+# MOVIE RECOMMENDATION SYSTEM
 # ==========================================
 movie = [
     {
