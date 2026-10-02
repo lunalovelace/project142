@@ -842,7 +842,7 @@ def show_all_movies(movie_list):
     st.subheader("ALL MOVIES")
     number = 1
 
-    for m in movie_list:
+for m in movie_list:
         name = m["title"]
         genre_movie = m["genre"]
         rating = m["rating"]
@@ -872,7 +872,7 @@ def show_highest_rated(movie_list):
     highest = find_highest_rating(movie_list)
     st.subheader(f"HIGHEST-RATED MOVIES (⭐ {highest})")
 
-for m in movie_list:
+    for m in movie_list:
         name = m["title"]
         genre_movie = m["genre"]
         rating = m["rating"]
