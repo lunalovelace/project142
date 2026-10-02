@@ -10,7 +10,6 @@ st.set_page_config(
 
 # ตกแต่งด้วย CSS Custom Style
 
-# 2. ตกแต่งด้วย CSS Custom Style
 st.markdown("""
 <style>
     /* ปรับแต่งส่วนหัวข้อหลัก */
