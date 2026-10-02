@@ -91,53 +91,75 @@ movie = [
 
 
 # ==========================================
-# USER-DEFINED FUNCTIONS
+# HELPER FUNCTION FOR UI DISPLAY
 # ==========================================
-
-# ฟังก์ชัน 1: แสดงผลการ์ดภาพยนตร์บน Streamlit
-def display_movie_card(m):
+def display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster):
     col_img, col_detail = st.columns([1, 3])
     with col_img:
-        st.image(m["poster"], use_column_width=True)
+        st.image(poster, use_column_width=True)
     with col_detail:
-        st.subheader(m["title"])
-        st.write(f"**Genre:** {m['genre']} | **Rating:** ⭐ {m['rating']} | **Duration:** ⏱️ {m['duration']} minutes")
-        st.write(f"**Synopsis:** {m['synopsis']}")
+        st.subheader(name)
+        st.write(f"**Genre:** {genre_movie} | **Rating:** ⭐ {rating} | **Duration:** ⏱️ {duration} minutes")
+        st.write(f"**Synopsis:** {synopsis}")
     st.divider()
 
-# ฟังก์ชัน 2: ค้นหาภาพยนตร์ตามเงื่อนไข
-def find_movies(movie_list, genre, min_rating, max_duration):
-    found = 0
-    for m in movie_list:
-        name = m["title"]
-        genre_movie = m["genre"]
-        rating = m["rating"]
-        duration = m["duration"]
+# ==========================================
+# FUNCTION 1 : MAIN MENU
+# ==========================================
+def show_menu():
+    st.sidebar.header("MAIN MENU")
+    print("\n==========================================")
+    print("       MOVIE RECOMMENDATION SYSTEM")
+    print("==========================================")
+    print("1. Find a Movie")
+    print("2. Show All Movies")
+    print("3. Show Highest-Rated Movies")
+    print("4. Show Movies by Genre")
+    print("5. Exit")
+    print("==========================================")
 
-        if genre_movie == genre or genre == "All":
-            if rating >= min_rating:
-                if duration <= max_duration:
-                    display_movie_card(m)
-                    found = found + 1
-    return found
+def choose_genre():
+    choice = st.selectbox(
+        "Choose genre:",
+        ["1. Horror", "2. Action", "3. Animation", "4. Romance", "5. Comedy", "6. Fantasy", "7. Thriller"]
+        if "1" in choice:
+            genre = "Horror"
+        elif "2" in choice:
+            genre = "Action"
+        elif "3" in choice:
+            genre = "Animation"
+        elif "4" in choice:
+            genre = "Romance"
+        elif "5" in choice:
+            genre = "Comedy"
+        elif "6" in choice:
+            genre = "Fantasy"
+        elif "7" in choice:
+            genre = "Thriller"
+        else:
+            genre = "Wrong"
+        return genre
 
-# ฟังก์ชัน 3: แสดงภาพยนตร์ทั้งหมด
-def show_all_movies(movie_list):
-    number = 1
-    for m in movie_list:
-        st.write(f"### {number}.")
-        display_movie_card(m)
-        number = number + 1
+# ==========================================
+# FUNCTION 3 : GET MINIMUM RATING
+# ==========================================
+def get_min_rating():
+    st.write("\nRating should be between 0 and 10")
+    rating = st.slider("Enter minimum rating :)
+    if rating < 0:
+        rating = 0
+    elif rating > 10:
+        rating = 10
+    return rating
 
-# ฟังก์ชัน 4: ค้นหาคะแนนสูงสุด
-def find_highest_rating(movie_list):
-    highest = movie_list[0]["rating"]
-    for m in movie_list:
-        rating = m["rating"]
-        if rating > highest:
-            highest = rating
-    return highest
-
+# ==========================================
+# FUNCTION 4 : GET MAXIMUM DURATION
+# ==========================================
+def get_max_duration():
+    duration = st.number_input("Maximum duration (minutes):", min_value=1, value=150)
+    if duration < 1:
+        duration = 1
+    return duration
 # ฟังก์ชัน 5: แสดงภาพยนตร์คะแนนสูงสุด
 def show_highest_rated(movie_list):
     highest = find_highest_rating(movie_list)
