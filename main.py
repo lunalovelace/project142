@@ -928,7 +928,7 @@ def display_result(found):
 def show_all_movies(movie_list):
     st.subheader("ALL MOVIES")
     number = 1
-for m in movie_list:
+    for m in movie_list:
         name = m["title"]
         genre_movie = m["genre"]
         rating = m["rating"]
@@ -977,7 +977,7 @@ def show_movies_by_genre(movie_list):
     if genre == "Wrong":
         st.error("\nInvalid genre.")
     else:
-         if st.button("Show Movies"):
+        if st.button("Show Movies"):
             st.subheader("MOVIE RESULTS")
             found = 0
 
