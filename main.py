@@ -63,7 +63,7 @@ st.markdown("""
     }
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
-        color: #F0D94E !important;
+        color: #F0D9E4 !important;
         font-family: 'Unbounded', cursive !important; /*หัวข้อ*/
         /* เปลี่ยนฟอนต์ให้ตัวเลือกเมนูใน Sidebar */
     section[data-testid="stSidebar"] label {
@@ -89,10 +89,10 @@ st.markdown("""
 
     /* แต่งปุ่มกด */
     div.stButton > button {
-        background-color: #F0D94E;
+        background-color: #F0D9E4;
         color: #23160E !important;
         border-radius: 8px;
-        border: 2px solid #F0D94E;
+        border: 2px solid #F0D9E4;
         font-family: 'Unbounded', cursive !important;
         font-weight: 600;
         transition: all 0.2s ease;
