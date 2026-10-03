@@ -12,7 +12,7 @@ st.set_page_config(
 st.markdown("""
 <style>
     /* 1. นำเข้าฟอนต์ Prompt */
-    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
     /* 2. เปลี่ยนฟอนต์เนื้อหาทั่วไปเป็น Prompt */
     html, body, p, div, span, label {
@@ -42,24 +42,24 @@ st.markdown("""
     /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ Mali */
     section[data-testid="stSidebar"] .stRadio label,
     section[data-testid="stSidebar"] div[role="radiogroup"] * {
-        font-family: 'Mali', cursive !important;
+        font-family: 'Montserrat', cursive !important;
         font-size: 1.05rem !important;
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
         color: #E8B6B9 !important;
     }
-    /* 8. บังคับเปลี่ยนฟอนต์หัวข้อทุกระดับให้เป็นฟอนต์ Mali */
+    /* 8. บังคับเปลี่ยนฟอนต์หัวข้อทุกระดับให้เป็นฟอนต์  */
     h1, h2, h3, 
     div[data-testid="stMarkdownContainer"] h1, 
     div[data-testid="stMarkdownContainer"] h2, 
     div[data-testid="stMarkdownContainer"] h3 {
-        color: #F0D94E !important;
-        font-family: 'Mali', cursive !important;
+        color: #F0D9E4 !important;
+        font-family: 'Unbounded', cursive !important;
     }
     /* สีหัวข้อทุกระดับ  */
     h1, h2, h3 {
-        color: #F0D94E !important;
+        color: #F0D9E4 !important;
     }
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
@@ -93,7 +93,7 @@ st.markdown("""
         color: #23160E !important;
         border-radius: 8px;
         border: 2px solid #F0D94E;
-        font-family: 'Mali', cursive !important;
+        font-family: 'Montserrat', cursive !important;
         font-weight: 600;
         transition: all 0.2s ease;
     }
