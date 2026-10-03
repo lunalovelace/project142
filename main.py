@@ -796,7 +796,7 @@ movie = [
         "rating": 8.2,
         "duration": 119,
         "synopsis": "เทพนิยายสายมืดท่ามกลางสงคราม เมื่อเด็กหญิงตัวน้อยต้องผ่านบททดสอบสุดสยองใน เขาวงกตปริศนา",
-        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/7wb2Ldp0oAx1lcZvffq9RfWoI2h.jpg
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/7wb2Ldp0oAx1lcZvffq9RfWoI2h.jpg"
     },
     {
         "title": "Wonka",
