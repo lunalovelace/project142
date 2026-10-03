@@ -12,19 +12,6 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* ปรับแต่งส่วนหัวข้อหลัก */
-    .main-title {
-        text-align: center;
-        color: #FF4B4B;  #เปลี่ยนสี🧙🏻‍♀️
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 0px;
-    }
-    .sub-title {
-        text-align: center;
-        color: #FAFAFA;
-        font-size: 1.1rem;
-        margin-bottom: 25px;
     }
     /* ปรับแต่งกรอบ Code / Terminal Output */
     div[data-baseweb="code"] {
@@ -44,15 +31,15 @@ st.markdown("""
     }
     /* แต่งปุ่มกดให้มีมิติ */
     div.stButton > button {
-        background-color: #9BBCB7;
+        background-color: #F0D94E;
         color: #23160E !important;
         border-radius: 8px;
-        border: 2px solid #9BBCB7;
+        border: 2px solid #F0D94E;
         font-weight: 600;
         transition: all 0.2s ease;
     }
     div.stButton > button:hover {
-        background-color: #E8B6B9;
+        background-color: #16131F;
         border-color: #E8B6B9;
         transform: translateY(-2px); /* เอฟเฟกต์ปุ่มเด้งของคุณ */
         box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4); /* เปลี่ยนสีเงาเป็นสีชมพู */
@@ -68,7 +55,7 @@ st.markdown("""
     }
     /* สีพื้นหลังหลักของแอปและ Sidebar */
     .stApp, section[data-testid="stSidebar"] {
-        background-color: #23160E;#สีน้ำตาลเข้ม
+        background-color: #16131F;#สีดำ
     }
     /* สีตัวอักษรทั่วไปและเนื้อหา (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
@@ -76,7 +63,7 @@ st.markdown("""
     }
     /* สีหัวข้อทุกระดับ (สีเขียวมิ้นต์) */
     h1, h2, h3 {
-        color: #9BBCB7 !important;
+        color: #F0D94E !important;
     }
     
 </style>
@@ -1051,18 +1038,14 @@ def find_movie_menu(movie_list):
             display_result(found)
 
 # ==========================================
-# FUNCTION 12 : SHOW INFORMATION
-# ==========================================
-
-# ==========================================
-# FUNCTION 12 : SHOW INFORMATION (ปรับปรุงใหม่)
+# FUNCTION 12 : SHOW INFORMATION 
 # ==========================================
 def show_information():
     
-    st.markdown("<h2 style='text-align: center; color: #FF4B4B;'>🎬 Movie Recommendation System</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #FOD9E4;'>🎬 Movie Recommendation System</h2>", unsafe_allow_html=True)
+    #chageFont
     
-    
-    st.markdown("<p style='text-align: center; color: #888888; font-size: 16px;'>This program helps users find movies based on genre, rating and duration.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #C9C7CD; font-size: 16px;'>This program helps users find movies based on genre, rating and duration.</p>", unsafe_allow_html=True)
     
     st.divider() 
     
