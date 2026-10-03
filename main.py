@@ -48,14 +48,6 @@ st.markdown("""
     .stMarkdown, .stText, p, label {
         color: #E8B6B9 !important;
     }
-    /* 8. บังคับเปลี่ยนฟอนต์หัวข้อทุกระดับให้เป็นฟอนต์  */
-    h1, h2, h3, 
-    div[data-testid="stMarkdownContainer"] h1, 
-    div[data-testid="stMarkdownContainer"] h2, 
-    div[data-testid="stMarkdownContainer"] h3 {
-        color: #F0D9E4 !important;
-        font-family: 'Montserrat', cursive !important;
-    }
     /* สีหัวข้อทุกระดับ  */
     h1, h2, h3 {
         color: #F0D9E4 !important;
