@@ -48,12 +48,6 @@ st.markdown("""
         color: #ff0037!important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
     }
-    /* ปรับแต่งกรอบ Code */
-    div[data-baseweb="code"] {
-        border-radius: 10px;
-        border: 1px solid #ff0037;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
 
     /* แต่งภาพโปสเตอร์ */
     img {
@@ -72,7 +66,7 @@ st.markdown("""
         border-radius: 8px;
         border: 2px solid #F0D9E4;
         font-family: 'Montserrat', cursive !important;
-        font-weight: 600;
+        font-weight: bold;
         transition: all 0.2s ease;
     }
     
@@ -80,6 +74,12 @@ st.markdown("""
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(255, 75, 75, 0.3);
     }
+        /* แต่งแถบ Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #161920;
+        border-right: 1px solid #2d3139;
+    }
+
 
     
     
