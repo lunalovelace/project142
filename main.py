@@ -15,7 +15,7 @@ st.markdown("""
     /* ปรับแต่งส่วนหัวข้อหลัก */
     .main-title {
         text-align: center;
-        color: #FF4B4B;
+        color: #FF4B4B;  #เปลี่ยนสี🧙🏻‍♀️
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 0px;
@@ -29,13 +29,14 @@ st.markdown("""
     /* ปรับแต่งกรอบ Code / Terminal Output */
     div[data-baseweb="code"] {
         border-radius: 10px;
-        border: 1px solid #333333;
+        border: 1px solid #9BBCB7;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        
     }
     /* แต่งภาพโปสเตอร์ + เอฟเฟกต์ซูมเวลานำเมาส์ไปชี้ */
     img {
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 12px rgba(155, 188, 183, 0.2); /* เปลี่ยนสีเงาเป็นสีมิ้นต์อ่อนๆ */
         transition: transform 0.3s ease-in-out;
     }
     img:hover {
@@ -43,19 +44,41 @@ st.markdown("""
     }
     /* แต่งปุ่มกดให้มีมิติ */
     div.stButton > button {
+        background-color: #9BBCB7;
+        color: #23160E !important;
         border-radius: 8px;
-        font-weight: bold;
+        border: 2px solid #9BBCB7;
+        font-weight: 600;
         transition: all 0.2s ease;
     }
     div.stButton > button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(255, 75, 75, 0.3);
+        background-color: #E8B6B9;
+        border-color: #E8B6B9;
+        transform: translateY(-2px); /* เอฟเฟกต์ปุ่มเด้งของคุณ */
+        box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4); /* เปลี่ยนสีเงาเป็นสีชมพู */
     }
     /* แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
         background-color: #161920;
         border-right: 1px solid #2d3139;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+    {
+        font-family: 'Prompt', sans-serif !important;#บังคับใช้ฟอนต์ทั้งหมด
+    }
+    /* สีพื้นหลังหลักของแอปและ Sidebar */
+    .stApp, section[data-testid="stSidebar"] {
+        background-color: #23160E;#สีน้ำตาลเข้ม
+    }
+    /* สีตัวอักษรทั่วไปและเนื้อหา (สีชมพูอ่อน) */
+    .stMarkdown, .stText, p, label {
+        color: #E8B6B9 !important;
+    }
+    /* สีหัวข้อทุกระดับ (สีเขียวมิ้นต์) */
+    h1, h2, h3 {
+        color: #9BBCB7 !important;
+    }
+    
 </style>
 """, unsafe_allow_html=True)
 
@@ -1031,16 +1054,27 @@ def find_movie_menu(movie_list):
 # FUNCTION 12 : SHOW INFORMATION
 # ==========================================
 
+# ==========================================
+# FUNCTION 12 : SHOW INFORMATION (ปรับปรุงใหม่)
+# ==========================================
 def show_information():
-    st.title("🎬 MOVIE RECOMMENDATION SYSTEM")
-    st.write("This program helps users find movies based on genre, rating and duration.")
     
+    st.markdown("<h2 style='text-align: center; color: #FF4B4B;'>🎬 Movie Recommendation System</h2>", unsafe_allow_html=True)
+    
+    
+    st.markdown("<p style='text-align: center; color: #888888; font-size: 16px;'>This program helps users find movies based on genre, rating and duration.</p>", unsafe_allow_html=True)
+    
+    st.divider() 
+    
+    # ส่วน Technical Info 
     with st.expander("ℹ️ Show Program Technical Info"):
-        st.write("The program uses:")
-        st.write("- List")
-        st.write("- If / Elif / Else")
-        st.write("- For Loop")
-        st.write("- User-defined Functions")
+        st.info("""
+        **System Architecture & Logic:**
+        - **Data Structure:** List & Dictionaries
+        - **Control Flow:** If / Elif / Else
+        - **Iteration:** For Loop
+        - **Modularity:** User-defined Functions
+        """)
 
 
 # ==========================================
@@ -1048,15 +1082,14 @@ def show_information():
 # ==========================================
 
 show_information()
-show_menu()
 
 choice = st.sidebar.radio(
-    "📌 Select Option (1-4):",
+    "📌 Select Option:",
     [
-        "1. Find a Movie",
-        "2. Show All Movies",
-        "3. Show Highest-Rated Movies",
-        "4. Show Movies by Genre"
+        "🔍 1. Find a Movie",
+        "🎞️ 2. Show All Movies",
+        "⭐ 3. Show Highest-Rated Movies",
+        "🎭 4. Show Movies by Genre"
     ]
 )
 
