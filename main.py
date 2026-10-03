@@ -43,13 +43,9 @@ st.markdown("""
     .stMarkdown, .stText, p, label {
         color: #E8B6B9 !important;
     }
-    /* สีหัวข้อทุกระดับ  */
-    h1, h2, h3 {
-        color: #ff0037 !important;
-    }
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
-        color: #F0D9E4 !important;
+        color: #ff0037!important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
     }
     /* ปรับแต่งกรอบ Code */
