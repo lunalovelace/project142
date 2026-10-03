@@ -51,7 +51,11 @@ st.markdown("""
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
         color: #F0D94E !important;
-        font-family: 'Unbounded', cursive !important; 
+        font-family: 'Unbounded', cursive !important; /*หัวข้อ*/
+        /* เปลี่ยนฟอนต์ให้ตัวเลือกเมนูใน Sidebar */
+    section[data-testid="stSidebar"] label {
+        font-family: 'Unbounded', cursive !important;
+    }
     }
     /* ปรับแต่งกรอบ Code */
     div[data-baseweb="code"] {
