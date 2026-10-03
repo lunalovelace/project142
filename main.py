@@ -25,7 +25,7 @@ st.markdown("""
     }
     /* 4. สีพื้นหลังหลักของเว็บ */
     .stApp {
-        background-color: #e2dde3 !important;
+        background-color: #fff3f2 !important;
     }
 
     /* 5. แต่งแถบ Sidebar */
