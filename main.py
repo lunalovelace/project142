@@ -9,27 +9,59 @@ st.set_page_config(
 )
 
 # ตกแต่งด้วย CSS Custom Style
-
+# ตกแต่งด้วย CSS Custom Style
 st.markdown("""
 <style>
+    /* นำเข้าและบังคับใช้ฟอนต์ Prompt */
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+    * {
+        font-family: 'Prompt', sans-serif !important;
     }
-    /* ปรับแต่งกรอบ Code / Terminal Output */
+
+    /* 1. สีพื้นหลังหลักของแอป (สีดำ) */
+    .stApp {
+        background-color: #16131F !important;
+    }
+
+    /* 2. แต่งแถบ Sidebar (พื้นหลังสีเขียวมิ้นต์) */
+    section[data-testid="stSidebar"] {
+        background-color: #9BBCB7 !important;
+        border-right: 1px solid #2d3139;
+    }
+
+    /* 3. สีตัวหนังสือเฉพาะใน Sidebar (สีชมพูอ่อน) */
+    section[data-testid="stSidebar"] * {
+        color: #E8B6B9 !important;
+    }
+
+    /* 4. สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
+    .stMarkdown, .stText, p, label {
+        color: #E8B6B9 !important;
+    }
+
+    /* 5. สีหัวข้อทุกระดับ (สีเหลืองทองตามที่คุณตั้งไว้) */
+    h1, h2, h3 {
+        color: #F0D94E !important;
+    }
+
+    /* ปรับแต่งกรอบ Code */
     div[data-baseweb="code"] {
         border-radius: 10px;
         border: 1px solid #9BBCB7;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        
     }
-    /* แต่งภาพโปสเตอร์ + เอฟเฟกต์ซูมเวลานำเมาส์ไปชี้ */
+
+    /* แต่งภาพโปสเตอร์ */
     img {
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(155, 188, 183, 0.2); /* เปลี่ยนสีเงาเป็นสีมิ้นต์อ่อนๆ */
+        box-shadow: 0 4px 12px rgba(155, 188, 183, 0.2);
         transition: transform 0.3s ease-in-out;
     }
     img:hover {
         transform: scale(1.04);
     }
-    /* แต่งปุ่มกดให้มีมิติ */
+
+    /* แต่งปุ่มกด */
     div.stButton > button {
         background-color: #F0D94E;
         color: #23160E !important;
@@ -38,40 +70,17 @@ st.markdown("""
         font-weight: 600;
         transition: all 0.2s ease;
     }
+    
+    /* เอฟเฟกต์ปุ่มตอนเอาเมาส์ชี้ */
     div.stButton > button:hover {
         background-color: #16131F;
         border-color: #E8B6B9;
-        transform: translateY(-2px); /* เอฟเฟกต์ปุ่มเด้งของคุณ */
-        box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4); /* เปลี่ยนสีเงาเป็นสีชมพู */
+        color: #E8B6B9 !important; /* ให้ตัวหนังสือปุ่มเป็นสีชมพูตอนชี้ จะได้อ่านออกบนพื้นดำ */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4);
     }
-    /* แต่งแถบ Sidebar */
-    section[data-testid="stSidebar"] {
-        background-color: #9BBCB7 !important; /* สีเขียวมิ้น
-        border-right: 1px solid #2d3139; /* ตัวหนังสือสีชมพู
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
-    {
-        font-family: 'Prompt', sans-serif !important;#บังคับใช้ฟอนต์ทั้งหมด
-    }
-    /* สีพื้นหลังหลักของแอปและ Sidebar */
-    .stApp { /* #แก้ตรงนี้: ลบคำว่า ', section[data-testid="stSidebar"]' ออกไป เพื่อไม่ให้สีดำมาทับสี Sidebar ที่เราเพิ่งเปลี่ยน */
-        background-color: #16131F; /* #แก้ตรงนี้: เปลี่ยนคอมเมนต์ภาษาไทยให้อยู่ในเครื่องหมายของ CSS ไม่งั้นเว็บจะ Error ครับ */
-    }
-    section[data-testid="stSidebar"] * {
-        color: #E8B6B9 !important;
-    }
-    /* สีตัวอักษรทั่วไปและเนื้อหา (สีชมพูอ่อน) */
-    .stMarkdown, .stText, p, label {
-        color: #E8B6B9 !important;
-    }
-    /* สีหัวข้อทุกระดับ (สีเขียวมิ้นต์) */
-    h1, h2, h3 {
-        color: #F0D94E !important;
-    }
-    
 </style>
 """, unsafe_allow_html=True)
-
 
 
 #-------------------------------------------
