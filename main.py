@@ -11,36 +11,35 @@ st.set_page_config(
 # ตกแต่งด้วย CSS Custom Style
 st.markdown("""
 <style>
-    /* 1. นำเข้าฟอนต์ Prompt */
+    /* 1. นำเข้าฟอนต์ */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded&display=swap');
     
-    /* 2. เปลี่ยนฟอนต์เนื้อหาทั่วไปเป็น Prompt */
+    /* 2.  */
     html, body, p, div, span, label {
         font-family: 'Montserrat', sans-serif;
     }
     
-    /* 3. บังคับให้ไอคอนกลับมาเป็นเหมือนเดิม (แก้ปัญหาลูกศรกลายเป็นตัวหนังสือ) */
+    /* 3. ลูกศร */
     span[class*="material"] {
         font-family: 'Material Symbols Rounded', 'Material Icons' !important;
     }
-    /* 4. สีพื้นหลังหลักของแอป (สีดำ) */
+    /* 4. สีพื้นหลังหลักของเว็บ */
     .stApp {
         background-color: #16131F !important;
     }
 
-    /* 5. แต่งแถบ Sidebar (พื้นหลังสีเขียวมิ้นต์) */
+    /* 5. แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
         background-color: #9BBCB7 !important;
         border-right: 1px solid #16131F;
     }
 
-    /* 6. สีตัวหนังสือเฉพาะใน Sidebar (สีชมพูอ่อน) */
+    /* 6. สีตัวหนังสือเฉพาะใน Sidebar */
     section[data-testid="stSidebar"] * {
         color: #16131F !important;
     }
 
     /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ */
-    /* เปลี่ยนฟอนต์คำว่า Select Option และตัวเลือกในแถบด้านข้าง */
     section[data-testid="stSidebar"] label,
     section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p {
         font-family: 'Montserrat', sans-serif !important; 
@@ -65,10 +64,6 @@ st.markdown("""
     h1, h2, h3 {
         color: #F0D9E4 !important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
-        /* เปลี่ยนฟอนต์ให้ตัวเลือกเมนูใน Sidebar */
-    section[data-testid="stSidebar"] label {
-        font-family: 'Montserrat', cursive !important;
-    }
     }
     /* ปรับแต่งกรอบ Code */
     div[data-baseweb="code"] {
@@ -104,14 +99,6 @@ st.markdown("""
     }
 
     
-    /* เอฟเฟกต์ปุ่มตอนเอาเมาส์ชี้ */
-    div.stButton > button:hover {
-        background-color: #16131F;
-        border-color: #E8B6B9;
-        color: #E8B6B9 !important; /* ให้ตัวหนังสือปุ่มเป็นสีชมพูตอนชี้ จะได้อ่านออกบนพื้นดำ */
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4);
-    }
     
 </style>
 """, unsafe_allow_html=True)
