@@ -25,27 +25,27 @@ st.markdown("""
     }
     /* 4. สีพื้นหลังหลักของเว็บ */
     .stApp {
-        background-color: #16131F !important;
+        background-color: #fff7e6 !important;
     }
 
     /* 5. แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #9BBCB7 !important;
+        background-color: #cfe9de !important;
         border-right: 1px solid #16131F;
     }
 
     /* 6. สีตัวหนังสือเฉพาะใน Sidebar */
     section[data-testid="stSidebar"] * {
-        color: #16131F !important;
+        color: #930507 !important;
     
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
-        color: #E8B6B9 !important;
+        color: #a4b9ce !important;
     }
     /* 8. สีหัวข้อ */
     h1, h2, h3 {
-        color: #ff0037!important;
+        color: #930507!important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
     }
 
@@ -61,10 +61,10 @@ st.markdown("""
 
     /* แต่งปุ่มกด */
     div.stButton > button {
-        background-color: #F0D9E4;
-        color: #23160E !important;
+        background-color: #cfe9de;
+        color: #cfe9de !important;
         border-radius: 8px;
-        border: 2px solid #F0D9E4;
+        border: 2px solid #cfe9de;
         font-family: 'Montserrat', cursive !important;
         font-weight: bold;
         transition: all 0.2s ease;
@@ -76,8 +76,8 @@ st.markdown("""
     }
         /* แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #161920;
-        border-right: 1px solid #2d3139;
+        background-color: #cfe0de;
+        border-right: 1px solid #930507;
     }
 
 
@@ -1058,10 +1058,10 @@ def find_movie_menu(movie_list):
 # ==========================================
 def show_information():
     
-    st.markdown("<h2 style='text-align: center; color: #FOD9E4;'>🎬 Movie Recommendation System</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #930507;'>🎬 Movie Recommendation System</h2>", unsafe_allow_html=True)
     #chageFont
     
-    st.markdown("<p style='text-align: center; color: #C9C7CD; font-size: 16px;'>This program helps users find movies based on genre, rating and duration.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #cfe9de; font-size: 16px;'>This program helps users find movies based on genre, rating and duration.</p>", unsafe_allow_html=True)
     
     st.divider() 
     
