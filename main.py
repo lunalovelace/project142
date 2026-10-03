@@ -41,7 +41,7 @@ st.markdown("""
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก */
     .stMarkdown, .stText, p, label {
-        color: ##ffffff !important;
+        color: #ffffff !important;
     }
     /* 8. สีหัวข้อ */
     h1, h2, h3 {
@@ -61,10 +61,10 @@ st.markdown("""
 
     /* แต่งปุ่มกด */
     div.stButton > button {
-        background-color: #cfe9de;
-        color: #cfe9de !important;
+        background-color: #151515;
+        color: #ffffff !important;
         border-radius: 8px;
-        border: 2px solid #cfe9de;
+        border: 2px solid #ffffff;
         font-family: 'Montserrat', cursive !important;
         font-weight: bold;
         transition: all 0.2s ease;
@@ -76,8 +76,8 @@ st.markdown("""
     }
         /* แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #cfe0de;
-        border-right: 1px solid #930507;
+        background-color: #151515;
+        border-right: 1px solid ##ffffff;
     }
 
 
