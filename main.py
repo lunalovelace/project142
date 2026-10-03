@@ -1026,12 +1026,12 @@ def display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster):
         st.image(poster, use_column_width=True)
     with col_detail:
         st.subheader(name)
-        st.write(f"**Genre:** {genre_movie} | **Rating:** ⭐ {rating} | **Duration:** ⏱️ {duration} minutes")
-        st.write(f"**Synopsis:** {synopsis}")
+        st.write(f"**Genre: ** {genre_movie} | **Rating: ** ⭐ {rating} | **Duration: ** ⏱️ {duration} minutes")
+        st.write(f"**Synopsis: ** {synopsis}")
     st.divider()
 
 # ==========================================
-# FUNCTION 1 : MAIN MENU #check
+# FUNCTION 1 : MAIN MENU /*อาจจะไม่ได้ใช้*/
 # ==========================================
 def show_menu():
     st.sidebar.header("MAIN MENU")
