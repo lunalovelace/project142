@@ -37,12 +37,7 @@ st.markdown("""
     /* 6. สีตัวหนังสือเฉพาะใน Sidebar */
     section[data-testid="stSidebar"] * {
         color: #16131F !important;
-    }
-
-    /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ */
-    section[data-testid="stSidebar"] label,
-    section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p {
-        font-family: 'Montserrat', sans-serif !important; 
+    
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
