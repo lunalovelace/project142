@@ -42,8 +42,13 @@ st.markdown("""
     /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ */
     section[data-testid="stSidebar"] .stRadio label,
     section[data-testid="stSidebar"] div[role="radiogroup"] * {
-        font-family: 'Unbounded', cursive !important;
+        font-family: 'Montserrat', cursive !important;
         font-size: 1.05rem !important;
+    }
+    /* เปลี่ยนฟอนต์คำว่า Select Option และตัวเลือกในแถบด้านข้าง */
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p {
+        font-family: 'Unbounded', sans-serif !important; 
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
