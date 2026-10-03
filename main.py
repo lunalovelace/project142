@@ -55,7 +55,7 @@ st.markdown("""
     div[data-testid="stMarkdownContainer"] h2, 
     div[data-testid="stMarkdownContainer"] h3 {
         color: #F0D9E4 !important;
-        font-family: 'Unbounded', cursive !important;
+        font-family: 'Montserrat', cursive !important;
     }
     /* สีหัวข้อทุกระดับ  */
     h1, h2, h3 {
@@ -67,7 +67,7 @@ st.markdown("""
         font-family: 'Unbounded', cursive !important; /*หัวข้อ*/
         /* เปลี่ยนฟอนต์ให้ตัวเลือกเมนูใน Sidebar */
     section[data-testid="stSidebar"] label {
-        font-family: 'Unbounded', cursive !important;
+        font-family: 'Montserrat', cursive !important;
     }
     }
     /* ปรับแต่งกรอบ Code */
