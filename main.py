@@ -31,7 +31,7 @@ st.markdown("""
 
     /* 3. สีตัวหนังสือเฉพาะใน Sidebar (สีชมพูอ่อน) */
     section[data-testid="stSidebar"] * {
-        color: #E8B6B9 !important;
+        color: #16131F !important;
     }
 
     /* 4. สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
