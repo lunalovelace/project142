@@ -574,6 +574,7 @@ movie = [
         "synopsis": "ตำนานความรักเหนือกาลเวลา ของหญิงสาวผู้จิตใจดีกับอสูรกายในปราสาทต้องคำสาป",
         "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
     },
+    {
         "title": "Spider-Man: Into the Spider-Verse",
         "genre": "Animation",
         "rating": 8.4,
