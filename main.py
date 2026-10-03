@@ -16,7 +16,7 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
     /* 2. เปลี่ยนฟอนต์เนื้อหาทั่วไปเป็น Prompt */
     html, body, p, div, span, label {
-        font-family: 'Prompt', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     
     /* 3. บังคับให้ไอคอนกลับมาเป็นเหมือนเดิม (แก้ปัญหาลูกศรกลายเป็นตัวหนังสือ) */
