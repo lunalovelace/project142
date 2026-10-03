@@ -708,7 +708,7 @@ movie = [
         "rating": 6.4,
         "duration": 108,
         "synopsis": "พลัดตกสู่อุโมงค์กระต่าย เข้าสู่แดนมหัศจรรย์สุดเพี้ยนที่ทุกสิ่งเป็นไปได้และไม่มีใครเหมือนเดิม",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/o0kre9wRCZz3jjSjaru7QU0UtFz.jpg"
     },
     {
         "title": "Maleficient",
@@ -716,7 +716,7 @@ movie = [
         "rating": 6.9,
         "duration": 97,
         "synopsis": "เบื้องหลังตำนานที่ไม่เคยถูกบอกเล่า ของนางฟ้าปีศาจผู้ถูกทรยศจนหัวใจกลายเป็นหิน",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/ik8PugpL41s137RAWEGTAWu0dPo.jpg"
     },
     {
         "title": "Peter Pan",
@@ -724,7 +724,7 @@ movie = [
         "rating": 6.8,
         "duration": 113,
         "synopsis": "บินสู่เนเวอร์แลนด์ ดินแดนแห่งจินตนาการและการผจญภัยอันไม่มีวันแก่ชรา",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/6QdU3TZZrIvXFzoHOwafZAynFjB.jpg"
     },
     {
         "title": "Pan's Labyrinth",
@@ -732,7 +732,7 @@ movie = [
         "rating": 8.2,
         "duration": 119,
         "synopsis": "เทพนิยายสายมืดท่ามกลางสงคราม เมื่อเด็กหญิงตัวน้อยต้องผ่านบททดสอบสุดสยองใน เขาวงกตปริศนา",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/7wb2Ldp0oAx1lcZvffq9RfWoI2h.jpg
     },
     {
         "title": "Wonka",
@@ -740,7 +740,7 @@ movie = [
         "rating": 6.9,
         "duration": 117,
         "synopsis": "จุดเริ่มต้นก่อนจะมาเป็นโรงงานช็อกโกแลตสุดอัศจรรย์ กับความฝันสุดยิ่งใหญ่ของ วิลลี่ วองก้า",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/qhb1qOilapbapxWQn9jtRCMwXJF.jpg"
     },
     {
         "title": "Wicked",
@@ -748,15 +748,15 @@ movie = [
         "rating": 7.3,
         "duration": 160,
         "synopsis": "เรื่องราวความสัมพันธ์อันลึกซึ้งที่ไม่เคยเปิดเผย ของสองแม่มดแห่งดินแดนออส ก่อนที่โลกจะรู้จักพวกเธอ",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg"
     },
     {
-        "title": "Vampire Twilight",
+        "title": "Twilight",
         "genre": "Fantasy",
         "rating": 5.4,
         "duration": 122,
         "synopsis": "เมื่อรักแรกของเธอคือแวมไพร์ ความรักระหว่างมนุษย์กับอมนุษย์ที่ต้องแลกด้วยอันตรายถึงชีวิต",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/3Gkb6jm6962ADUPaCBqzz9CTbn9.jpg"
     },
     {
         "title": "Halloween",
@@ -764,7 +764,7 @@ movie = [
         "rating": 7.7,
         "duration": 91,
         "synopsis": "การกลับมาของเพชฌฆาตหน้าหน้ากากมัจจุราช ไมเคิล ไมเออร์ส และการเผชิญหน้าครั้งสุดท้ายที่สะสมความแค้นมากว่า 40 ปี",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg"
     },
     {
         "title": "Terrifier",
@@ -772,7 +772,7 @@ movie = [
         "rating": 5.5,
         "duration": 85,
         "synopsis": "อาร์ต เดอะ คลวน์ ตัวตลกโหดกระหายเลือด ออกไล่ล่าฆ่าเหยื่ออย่างวิปริตและสยดสยองไร้ความปรานีในคืนฮาโลวีน",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/fjXqhGmaeQpB73WerhrYU6HlyV5.jpg"
     },
     {
         "title": "You",
@@ -780,7 +780,7 @@ movie = [
         "rating": 7.6,
         "duration": 45,
         "synopsis": "เมื่อความรักกลายเป็นการเสพติดและสะกดรอย... ชายหนุ่มเสน่ห์แรงผู้ทำทุกอย่างเพื่อได้ครอบครองคนที่เขาหลงใหล",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg"
     },
     {
         "title": "Shark Frenzy",
@@ -788,7 +788,7 @@ movie = [
         "rating": 2.6,
         "duration": 82,
         "synopsis": "เรืออับปางกลางมหาสมุทร ฝูงฉลามขาวคลั่งล้อมรอบ... การดิ้นรนเอาชีวิตรอดของกลุ่มคนที่ต้องหนีจากการเป็นอาหารทะเล",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/A1dZIibysmc8fi5W4q18oJ2aSo4.jpg"
     },
     {
         "title": "Saw",
@@ -796,7 +796,7 @@ movie = [
         "rating": 7.6,
         "duration": 103,
         "synopsis": "คุณจะยอมแลกอวัยวะชิ้นไหนเพื่อรักษาชีวิต? เกมแค้นทรมานสุดโหดจากจิ๊กซอว์ที่จะทดสอบสัญชาตญาณการเอาชีวิตรอด",
-        "poster": "https://via.placeholder.com/500x750?text=No+Poster"
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/rLNSOudrayDBo1uqXjrhxcjODIC.jpg"
     },
     {
         "title": "The Strangers:Pray at Nighy",
