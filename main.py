@@ -13,7 +13,7 @@ st.markdown("""
 <style>
     /* 1. นำเข้าฟอนต์ Prompt */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+    @import url('@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU+Guides&family=Unbounded&display=swap');
     /* 2. เปลี่ยนฟอนต์เนื้อหาทั่วไปเป็น Prompt */
     html, body, p, div, span, label {
         font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,7 @@ st.markdown("""
     /* เปลี่ยนฟอนต์คำว่า Select Option และตัวเลือกในแถบด้านข้าง */
     section[data-testid="stSidebar"] label,
     section[data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p {
-        font-family: 'Unbounded', sans-serif !important; 
+        font-family: 'Playwrite Cuba Guides', sans-serif !important; 
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
@@ -55,7 +55,7 @@ st.markdown("""
     div[data-testid="stMarkdownContainer"] h2, 
     div[data-testid="stMarkdownContainer"] h3 {
         color: #F0D9E4 !important;
-        font-family: 'Montserrat', cursive !important;
+        font-family: 'Playwrite Cuba Guides', cursive !important;
     }
     /* สีหัวข้อทุกระดับ  */
     h1, h2, h3 {
@@ -64,10 +64,10 @@ st.markdown("""
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
         color: #F0D9E4 !important;
-        font-family: 'Unbounded', cursive !important; /*หัวข้อ*/
+        font-family: 'Playwrite Cuba Guides', cursive !important; /*หัวข้อ*/
         /* เปลี่ยนฟอนต์ให้ตัวเลือกเมนูใน Sidebar */
     section[data-testid="stSidebar"] label {
-        font-family: 'Montserrat', cursive !important;
+        font-family: 'Playwrite Cuba Guides', cursive !important;
     }
     }
     /* ปรับแต่งกรอบ Code */
