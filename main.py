@@ -71,6 +71,12 @@ st.markdown("""
         transition: all 0.2s ease;
     }
     
+    div.stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 75, 75, 0.3);
+    }
+
+    
     /* เอฟเฟกต์ปุ่มตอนเอาเมาส์ชี้ */
     div.stButton > button:hover {
         background-color: #16131F;
@@ -79,6 +85,7 @@ st.markdown("""
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(232, 182, 185, 0.4);
     }
+    
 </style>
 """, unsafe_allow_html=True)
 
