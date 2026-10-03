@@ -9,15 +9,14 @@ st.set_page_config(
 )
 
 # ตกแต่งด้วย CSS Custom Style
-# ตกแต่งด้วย CSS Custom Style
 st.markdown("""
 <style>
     /* นำเข้าและบังคับใช้ฟอนต์ Prompt */
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
-    * {
+   /* บังคับใช้ฟอนต์ Prompt ยกเว้นส่วนที่เป็นไอคอนของระบบ */
+    *:not(.material-symbols-rounded):not(.material-icons) {
         font-family: 'Prompt', sans-serif !important;
     }
-
     /* 1. สีพื้นหลังหลักของแอป (สีดำ) */
     .stApp {
         background-color: #16131F !important;
