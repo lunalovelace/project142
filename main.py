@@ -43,7 +43,7 @@ st.markdown("""
     section[data-testid="stSidebar"] .stRadio label,
     section[data-testid="stSidebar"] div[role="radiogroup"] * {
         font-family: 'Unbounded', cursive !important;
-        font-size: 1.10rem !important;
+        font-size: 1.05rem !important;
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
