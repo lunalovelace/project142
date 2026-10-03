@@ -13,7 +13,7 @@ st.markdown("""
 <style>
     /* 1. นำเข้าฟอนต์ Prompt */
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
     /* 2. เปลี่ยนฟอนต์หลัก (ปรับโค้ดใหม่เพื่อไม่ให้ไปกระทบไอคอน) */
     html, body, p, div, span, h1, h2, h3, label, button {
         font-family: 'Prompt', sans-serif;
@@ -48,7 +48,11 @@ st.markdown("""
     h1, h2, h3 {
         color: #F0D9E4 !important;
     }
-
+    /* 8. สีและฟอนต์หัวข้อทุกระดับ */
+    h1, h2, h3 {
+        color: #F0D94E !important;
+        font-family: 'Unbounded', cursive !important; 
+    }
     /* ปรับแต่งกรอบ Code */
     div[data-baseweb="code"] {
         border-radius: 10px;
