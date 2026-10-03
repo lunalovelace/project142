@@ -351,6 +351,46 @@ movie = [
         "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/c2PkTPT5D9zB8SIm5wNlDAANEqM.jpg"
     },
     {
+        "title": "Mad Max: Fury Road",
+        "genre": "Action",
+        "rating": 8.1,
+        "duration": 120,
+        "synopsis": "การไล่ล่าสุดคลั่งกลางทะเลทรายทลายโลก เมื่อชายหนุ่มจับมือกับขุนศึกหญิงเพื่อหลบหนีจากทรราช",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/ulcAi4dKpAjHwYGS08vNyx9H6I9.jpg"
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "genre": "Action",
+        "rating": 8.3,
+        "duration": 130,
+        "synopsis": "นักบินขับไล่ระดับตำนานกลับมารับภารกิจฝึกสอนเหล่านักบินรุ่นใหม่ในภารกิจเสี่ยงตายขั้นสุด",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg"
+    },
+    {
+        "title": "The Dark Knight",
+        "genre": "Action",
+        "rating": 9.0,
+        "duration": 152,
+        "synopsis": "การเผชิญหน้าทางอุดมการณ์และความสงบสุขของเมืองโกแธม ระหว่างอัศวินรัตติกาลกับอาชญากรเจ้าแห่งความโกลาหลอย่างโจ๊กเกอร์",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+        "title": "Mission: Impossible - Fallout",
+        "genre": "Action",
+        "rating": 7.7,
+        "duration": 147,
+        "synopsis": "อีธาน ฮันต์ และทีม IMF ต้องแข่งกับเวลาเพื่อยับยั้งการใช้อาวุธนิวเคลียร์ถล่มโลกหลังภารกิจผิดพลาด",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
+    },
+    {
+        "title": "Gladiator",
+        "genre": "Action",
+        "rating": 8.5,
+        "duration": 155,
+        "synopsis": "อดีตนายพลโรมันผู้ถูกทรยศจนสูญเสียครอบครัว ต้องกลายมาเป็นนักสู้สังเวียนเดือดเพื่อแก้แค้นจักรพรรดิชั่วร้าย",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg"
+   },
+   {
         "title": "Frozen",
         "genre": "Animation",
         "rating": 7.4,
@@ -533,6 +573,29 @@ movie = [
         "duration": 130,
         "synopsis": "ตำนานความรักเหนือกาลเวลา ของหญิงสาวผู้จิตใจดีกับอสูรกายในปราสาทต้องคำสาป",
         "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/hUJ0UvQ5tgE2Z9WpfuduVSdiCiU.jpg"
+    },
+        "title": "Spider-Man: Into the Spider-Verse",
+        "genre": "Animation",
+        "rating": 8.4,
+        "duration": 117,
+        "synopsis": "เด็กหนุ่มไมลส์ โมราเลส ต้องจับมือกับเหล่าไอ้แมงมุมจากมิติต่างๆ เพื่อหยุดยั้งภัยคุกคามที่จะทำลายล้างทุกมิติ",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg"
+    },
+    {
+        "title": "Coco",
+        "genre": "Animation",
+        "rating": 8.4,
+        "duration": 105,
+        "synopsis": "เด็กหนุ่มผู้มีความฝันอยากเป็นนักดนตรี ได้หลุดเข้าไปในโลกหลังความตายเพื่อค้นหาความลับของครอบครัว",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+    },
+    { 
+        "title": "Inside Out",
+        "genre": "Animation",
+        "rating": 8.1,
+        "duration": 95,
+        "synopsis": "การผจญภัยของเหล่าอารมณ์ในศูนย์ควบคุมสมองของเด็กหญิงวัยรุ่นที่ต้องรับมือกับการเปลี่ยนแปลงครั้งใหญ่",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg"
     },
     {
         "title": "La La Land",
@@ -829,6 +892,126 @@ movie = [
         "duration": 107,
         "synopsis": "หลังเหตุการณ์วุ่นวายในวันแบล็กไฟรเดย์ ฆาตกรในชุดหน้ากากพิลกริมก็ออกสับเหยื่อทีละคนเพื่อจัดงานเลี้ยงวันขอบคุณพระเจ้าสุดสยอง",
         "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/f5f3TEVst1nHHyqgn7Z3tlwnBIH.jpg"
+    },
+    {
+        "title": "Interstellar",
+        "genre": "Sci-Fi",
+        "rating": 8.7,
+        "duration": 169,
+        "synopsis": "การเดินทางทะลุมิติและรูหนอนข้ามจักรวาลของกลุ่มนักสำรวจ เพื่อค้นหาดาวเคราะห์ดวงใหม่ให้มวลมนุษยชาติรอดพ้นจากการสูญพันธุ์",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg"
+    },
+    {
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "rating": 8.8,
+        "duration": 148,
+        "synopsis": "สายลับจารกรรมผู้มีความสามารถในการโจรกรรมความลับผ่านการปลูกฝังความคิดในความฝัน ต้องรับภารกิจสุดหินในการปลูกฝังความทรงจำใหม่",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
+    },
+    {
+        "title": "The Matrix",
+        "genre": "Sci-Fi",
+        "rating": 8.7,
+        "duration": 136,
+        "synopsis": "แฮกเกอร์หนุ่มค้นพบว่าโลกที่เขาอาศัยอยู่เป็นเพียงโปรแกรมจำลองเสมือนจริงที่ถูกควบคุมโดยปัญญาประดิษฐ์",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg"
+    },
+    {
+        "title": "Dune: Part Two",
+        "genre": "Sci-Fi",
+        "rating": 8.5,
+        "duration": 166,
+        "synopsis": "พอล อาทรีเดส รวมพลังกับชาวเฟรเมนและชาเนในการทำสงครามล้างแค้นตระกูลฮาร์คอนเนนและทวงคืนชะตากรรมแห่งอาราคิส",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg"
+    },
+    {
+        "title": "Blade Runner 2049",
+        "genre": "Sci-Fi",
+        "rating": 8.0,
+        "duration": 164,
+        "synopsis": "เบลดรันเนอร์คนใหม่ค้นพบความลับที่ซ่อนไว้มายาวนาน ซึ่งอาจนำไปสู่ความโกลาหลระหว่างมนุษย์และหุ่นยนต์สังเคราะห์",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+    },
+    {
+        "title": "2001: A Space Odyssey",
+        "genre": "Sci-Fi",
+        "rating": 8.3,
+        "duration": 149,
+        "synopsis": "มหากาพย์การเดินทางสู่อวกาศเพื่อค้นหาที่มาของแท่นหินปริศนา ร่วมกับปัญญาประดิษฐ์อัจฉริยะ HAL 9000",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg"
+    },
+    {
+        "title": "Arrival",
+        "genre": "Sci-Fi",
+        "rating": 7.9,
+        "duration": 116,
+        "synopsis": "นักภาษาศาสตร์ได้รับมอบหมายให้ทำหน้าที่สื่อสารและถอดรหัสภาษาของสิ่งมีชีวิตนอกโลกที่เดินทางมายังโลก",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
+    },
+    {
+        "title": "Terminator 2: Judgment Day",
+        "genre": "Sci-Fi",
+        "rating": 8.6,
+        "duration": 137,
+        "synopsis": "หุ่นยนต์สังหารรุ่นปรับปรุงถูกส่งกลับมาจากอนาคตเพื่อปกป้องเด็กหนุ่มผู้เป็นความหวังสุดท้ายของมนุษยชาติ",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/jFTVD4XoWQTcg7wdyJKa8PEds5q.jpg"
+    },
+    {
+        "title": "The Creator",
+        "genre": "Sci-Fi",
+        "rating": 6.8,
+        "duration": 133,
+        "synopsis": "ในยุคสงครามระหว่างมนุษย์กับปัญญาประดิษฐ์ อดีตเจ้าหน้าที่พิเศษต้องตามล่าอาวุธลับที่จะยุติสงครามซึ่งอยู่ในร่างของเด็กน้อย",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/3dSivDtOuyxLDxPH4v2tcNG1fP7.jpg"
+    },
+    {
+        "title": "Jurassic Park",
+        "genre": "Sci-Fi",
+        "rating": 8.2,
+        "duration": 127,
+        "synopsis": "สวนสนุกไดโนเสาร์คืนชีพด้วยวิศวกรรมพันธุศาสตร์เกิดระบบล้มเหลว ทำให้เหล่าไดโนเสาร์ออกไล่ล่าผู้เยี่ยมชม",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/d9mtMGQDLANKieb9PbD3yK7xxzo.jpg"
+    },
+    {
+        "title": "Ex Machina",
+        "genre": "Sci-Fi",
+        "rating": 7.7,
+        "duration": 108,
+        "synopsis": "โปรแกรมเมอร์หนุ่มได้รับเลือกให้ทดสอบระดับปัญญาประดิษฐ์ของหุ่นยนต์มนุษย์เพศหญิงในบ้านพักอันห่างไกล",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg"
+    },
+    {
+        "title": "Alien",
+        "genre": "Sci-Fi",
+        "rating": 8.5,
+        "duration": 117,
+        "synopsis": "ลูกเรือยานอวกาศขนส่งต้องเผชิญหน้ากับอสูรกายต่างดาวร้ายกาจที่แฝงตัวเข้ามาในยานและออกไล่ล่าทีละคน",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
+    },
+    {
+        "title": "Minority Report",
+        "genre": "Sci-Fi",
+        "rating": 7.6,
+        "duration": 145,
+        "synopsis": "หน่วยงานตำรวจจับกุมอาชญากรล่วงหน้าโดยใช้มนุษย์หยั่งรู้อนาคต แต่หัวหน้าหน่วยกลับกลายมาเป็นผู้ต้องหาในอนาคตเสียเอง",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/oUbANT6vjAFbHvhDQ3cxCZOzPK1.jpg"
+    },
+    {
+        "title": "Edge of Tomorrow",
+        "genre": "Sci-Fi",
+        "rating": 7.9,
+        "duration": 113,
+        "synopsis": "ทหารหนุ่มพบว่าตัวเองตกอยู่ในลูปเวลาที่ต้องตายและฟื้นกลับมาสู้ในวันเดิมวนไปเรื่อยๆ ท่ามกลางสงครามกับเอเลี่ยน",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg"
+    },
+    {
+        "title": "The Thing",
+        "genre": "Sci-Fi",
+        "rating": 8.2,
+        "duration": 109,
+        "synopsis": "ทีมวิจัยในแอนตาร์กติกาต้องเผชิญกับสิ่งมีชีวิตต่างดาวลึกลับที่สามารถเลียนแบบและปลอมตัวเป็นมนุษย์ทุกคนในกลุ่มได้",
+        "poster": "https://media.themoviedb.org/t/p/w600_and_h900_face/tzGY49kseSE9QAKk47uuDGwnSCu.jpg"
     }
 ]
 
@@ -874,7 +1057,7 @@ def show_menu():
 def choose_genre():
     choice = st.selectbox(
         "Choose genre:",
-        ["1. Horror", "2. Action", "3. Animation", "4. Romance", "5. Comedy", "6. Fantasy", "7. Thriller"]
+        ["1. Horror", "2. Action", "3. Animation", "4. Romance", "5. Comedy", "6. Fantasy", "7. Thriller","8. Sci-Fi"]
 )
     if "1" in choice:
         genre = "Horror"
@@ -890,6 +1073,8 @@ def choose_genre():
         genre = "Fantasy"
     elif "7" in choice:
         genre = "Thriller"
+    elif "8" in choice:
+        genre = "Sci-fi"
     else:
         genre = "Wrong"
     return genre
@@ -943,9 +1128,6 @@ def display_result(found):
         st.warning("\nNo movies found.")
         st.warning("Please try different conditions.")
     else:
-        print("\n==========================================")
-        print("             MOVIE RESULTS")
-        print("==========================================")
         st.success(f"Found {found} movie(s).")
 
 # ==========================================
