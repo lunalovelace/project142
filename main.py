@@ -25,27 +25,27 @@ st.markdown("""
     }
     /* 4. สีพื้นหลังหลักของเว็บ */
     .stApp {
-        background-color: #fff3f2 !important;
+        background-color: #151515 !important;
     }
 
     /* 5. แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #cfe9de !important;
-        border-right: 1px solid #16131F;
+        background-color: #93032E !important;
+        border-right: 1px solid #151515;
     }
 
     /* 6. สีตัวหนังสือเฉพาะใน Sidebar */
     section[data-testid="stSidebar"] * {
-        color: #930507 !important;
+        color: #151515 !important;
     
     }
-    /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
+    /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก */
     .stMarkdown, .stText, p, label {
-        color: #a4b9ce !important;
+        color: ##ffffff !important;
     }
     /* 8. สีหัวข้อ */
     h1, h2, h3 {
-        color: #930507!important;
+        color: #93032E!important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
     }
 
