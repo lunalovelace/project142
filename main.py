@@ -11,11 +11,17 @@ st.set_page_config(
 # ตกแต่งด้วย CSS Custom Style
 st.markdown("""
 <style>
-    /* นำเข้าและบังคับใช้ฟอนต์ Prompt */
+    /* 1. นำเข้าฟอนต์ Prompt */
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
-   /* บังคับใช้ฟอนต์ Prompt ยกเว้นส่วนที่เป็นไอคอนของระบบ */
-    *:not(.material-symbols-rounded):not(.material-icons) {
-        font-family: 'Prompt', sans-serif !important;
+    
+    /* 2. เปลี่ยนฟอนต์หลัก (ปรับโค้ดใหม่เพื่อไม่ให้ไปกระทบไอคอน) */
+    html, body, p, div, span, h1, h2, h3, label, button {
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    /* 3. บังคับให้ไอคอนกลับมาเป็นเหมือนเดิม (แก้ปัญหาลูกศรกลายเป็นตัวหนังสือ) */
+    span[class*="material"] {
+        font-family: 'Material Symbols Rounded', 'Material Icons' !important;
     }
     /* 1. สีพื้นหลังหลักของแอป (สีดำ) */
     .stApp {
