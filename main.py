@@ -39,11 +39,11 @@ st.markdown("""
         color: #16131F !important;
     }
 
-    /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ Mali */
+    /* 7. บังคับเปลี่ยนฟอนต์เมนูด้านซ้าย (1. Find a movie ฯลฯ) ให้เป็นฟอนต์ */
     section[data-testid="stSidebar"] .stRadio label,
     section[data-testid="stSidebar"] div[role="radiogroup"] * {
-        font-family: 'Montserrat', cursive !important;
-        font-size: 1.05rem !important;
+        font-family: 'Unbounded', cursive !important;
+        font-size: 1.10rem !important;
     }
     /* 7.1 สีตัวอักษรทั่วไปในหน้าหลัก (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
@@ -93,7 +93,7 @@ st.markdown("""
         color: #23160E !important;
         border-radius: 8px;
         border: 2px solid #F0D94E;
-        font-family: 'Montserrat', cursive !important;
+        font-family: 'Unbounded', cursive !important;
         font-weight: 600;
         transition: all 0.2s ease;
     }
