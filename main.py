@@ -1075,7 +1075,7 @@ def choose_genre():
     elif "7" in choice:
         genre = "Thriller"
     elif "8" in choice:
-        genre = "Sci-fi"
+        genre = "Sci-Fi"
     else:
         genre = "Wrong"
     return genre
