@@ -45,7 +45,7 @@ st.markdown("""
     }
     /* สีหัวข้อทุกระดับ  */
     h1, h2, h3 {
-        color: #F0D9E4 !important;
+        color: #F0D9E8 !important;
     }
     /* 8. สีและฟอนต์หัวข้อทุกระดับ */
     h1, h2, h3 {
