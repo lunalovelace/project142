@@ -26,7 +26,7 @@ st.markdown("""
     /* 2. แต่งแถบ Sidebar (พื้นหลังสีเขียวมิ้นต์) */
     section[data-testid="stSidebar"] {
         background-color: #9BBCB7 !important;
-        border-right: 1px solid #2d3139;
+        border-right: 1px solid #16131F;
     }
 
     /* 3. สีตัวหนังสือเฉพาะใน Sidebar (สีชมพูอ่อน) */
@@ -41,7 +41,7 @@ st.markdown("""
 
     /* 5. สีหัวข้อทุกระดับ (สีเหลืองทองตามที่คุณตั้งไว้) */
     h1, h2, h3 {
-        color: #F0D94E !important;
+        color: #F0D9E4 !important;
     }
 
     /* ปรับแต่งกรอบ Code */
