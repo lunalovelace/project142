@@ -1036,7 +1036,6 @@ def display_movie_on_web(name, genre_movie, rating, duration, synopsis, poster):
 def show_menu():
     st.sidebar.header("MAIN MENU")
     
-    # รวมข้อความทั้งหมดให้อยู่ในรูปแบบเดียวกัน
     menu_text = (
         "==========================================\n"
         "       MOVIE RECOMMENDATION SYSTEM\n"
