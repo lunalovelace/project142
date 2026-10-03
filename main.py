@@ -46,16 +46,19 @@ st.markdown("""
     }
     /* แต่งแถบ Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #161920;
-        border-right: 1px solid #2d3139;
+        background-color: #9BBCB7 !important; /* สีเขียวมิ้น
+        border-right: 1px solid #2d3139; /* ตัวหนังสือสีชมพู
     }
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
     {
         font-family: 'Prompt', sans-serif !important;#บังคับใช้ฟอนต์ทั้งหมด
     }
     /* สีพื้นหลังหลักของแอปและ Sidebar */
-    .stApp, section[data-testid="stSidebar"] {
-        background-color: #16131F;#สีดำ
+    .stApp { /* #แก้ตรงนี้: ลบคำว่า ', section[data-testid="stSidebar"]' ออกไป เพื่อไม่ให้สีดำมาทับสี Sidebar ที่เราเพิ่งเปลี่ยน */
+        background-color: #16131F; /* #แก้ตรงนี้: เปลี่ยนคอมเมนต์ภาษาไทยให้อยู่ในเครื่องหมายของ CSS ไม่งั้นเว็บจะ Error ครับ */
+    }
+    section[data-testid="stSidebar"] * {
+        color: #E8B6B9 !important;
     }
     /* สีตัวอักษรทั่วไปและเนื้อหา (สีชมพูอ่อน) */
     .stMarkdown, .stText, p, label {
