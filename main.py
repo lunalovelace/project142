@@ -43,7 +43,7 @@ st.markdown("""
     .stMarkdown, .stText, p, label {
         color: #E8B6B9 !important;
     }
-    /* 8. สีและฟอนต์หัวข้อทุกระดับ */
+    /* 8. สีหัวข้อ */
     h1, h2, h3 {
         color: #ff0037!important;
         font-family: 'Montserrat', cursive !important; /*หัวข้อ*/
@@ -51,7 +51,7 @@ st.markdown("""
     /* ปรับแต่งกรอบ Code */
     div[data-baseweb="code"] {
         border-radius: 10px;
-        border: 1px solid #9BBCB7;
+        border: 1px solid #ff0037;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
 
