@@ -1083,8 +1083,7 @@ def show_information():
 show_information()
 
 choice = st.sidebar.radio(
-    font-family: 'Montserrat', cursive !important;
-    font-weight: bold;
+
     "📌 Select Option:",
     [
         "🔍 1. Find a Movie",
